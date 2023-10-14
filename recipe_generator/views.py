@@ -5,6 +5,7 @@ from django.contrib.auth import login, logout,authenticate
 @login_required
 def home(request):
     if request.user.is_authenticated:
+
         print("Hello,user")
     else:
         print("Please log in via username and password or register yourself!")
